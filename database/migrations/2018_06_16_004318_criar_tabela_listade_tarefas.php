@@ -13,8 +13,14 @@ class CriarTabelaListadeTarefas extends Migration
      */
     public function up()
     {
-        //
-    }
+        Schema::create('listaDeTarefas', function(Blueprint $table){
+            $table->increments('id');
+            $table->string('texto');
+            $table->string('autor');
+            $table->string('status');
+            $table->timestamps();
+        }); 
+     }
 
     /**
      * Reverse the migrations.
@@ -23,6 +29,6 @@ class CriarTabelaListadeTarefas extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('listaDeTarefas');
     }
 }

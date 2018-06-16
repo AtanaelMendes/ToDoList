@@ -41,11 +41,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'mysql785.umbler.com'),
-            'port' => env('DB_PORT', '41890'),
-            'database' => env('DB_DATABASE', 'dbblog'),
-            'username' => env('DB_USERNAME', 'atanaelmendes'),
-            'password' => env('DB_PASSWORD', 'hades666hades666'),
+            'host' => env('DB_HOST', 'mysql427.umbler.com:41890'),
+            'port' => env('DB_PORT', ''),
+            'database' => env('DB_DATABASE', 'todolistdb'),
+            'username' => env('DB_USERNAME', 'atanael'),
+            'password' => env('DB_PASSWORD', 'hades666'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
